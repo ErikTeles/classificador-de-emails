@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/extends.css" />
+    <title>Classificador de E-mails</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Classificador de E-mails</h1>
+      <nav class="header__nav">
+        <a href="#about" class="header__link">Sobre</a>
+        <a href="#contact" class="header__link">Contato</a>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__content">
+        <form id="pdf-form" method="POST" enctype="multipart/form-data">
+          <h3 class="main__title-form">
+            Classifique seus e-mails e receba sugestões de resposta
+          </h3>
+          <label for="input-pdf-file" class="file-upload">
+            <span class="file-upload__text"
+              >Selecionar e-mail em formato PDF</span
+            >
+          </label>
+          <span class="file-upload__filename" id="file-name">
+            Nenhum arquivo selecionado
+          </span>
+          <input
+            type="file"
+            name="pdf_file"
+            id="input-pdf-file"
+            accept="application/pdf"
+          />
+          <button type="submit" class="main__button-form">
+            Enviar arquivo
+          </button>
+        </form>
+        <div class="main__result">
+          <h3 class="main__result-title">Resultado da Classificação</h3>
+
+          <div class="result__item">
+            <strong>Classificação:</strong>
+            <p id="result-classification">—</p>
+          </div>
+
+          <div class="result__item">
+            <strong>Motivo:</strong>
+            <p id="result-reason">—</p>
+          </div>
+
+          <div class="result__item">
+            <strong>Sugestão de resposta:</strong>
+            <p id="result-suggestion">—</p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="about" class="main__about">
+        <h2 class="main__about-title">Sobre o Classificador de E-mails</h2>
+        <p class="main__about-text">
+          Este projeto foi desenvolvido para classificar e-mails
+          automaticamente, oferecendo sugestões de resposta com base no conteúdo
+          do e-mail recebido. O objetivo é facilitar a gestão de e-mails e
+          melhorar a produtividade.
+        </p>
+      </section>
+
+      <hr />
+
+      <section id="contact" class="main__contact">
+        <h2 class="main__contact-title">
+          Entre em Contato com o Desenvolvedor
+        </h2>
+        <div class="contact__box">
+          <a
+            href="https://www.linkedin.com/in/erik-gabriel-teles-dos-santos"
+            class="main__contact-link"
+            target="_blank"
+            ><img
+              src="../static/assets/linkedin-icon.svg"
+              alt="Logo do Linkedin"
+          /></a>
+          <a
+            href="https://github.com/ErikTeles"
+            class="main__contact-link"
+            target="_blank"
+            ><img src="../static/assets/github-icon.svg" alt="Logo do GitHub"
+          /></a>
+          <a
+            href="mailto:erikgabrielteles@hotmail.com"
+            class="main__contact-link"
+            ><img src="../static/assets/outlook-icon.svg" alt="Logo do Outlook"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <h2 class="footer__title">
+        Erik Gabriel Teles dos Santos © 2026. Todos os direitos reservados.
+      </h2>
+      <h2 class="footer__license">
+        Icons by
+        <a href="https://icons8.com/" target="_blank">Icons8</a>
+      </h2>
+    </footer>
+    <script defer src="../static/js/script.js"></script>
+  </body>
+</html>

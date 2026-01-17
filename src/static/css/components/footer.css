@@ -1,0 +1,22 @@
+.footer {
+  background-color: var(--color-tertiary);
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+.footer__title {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 1em 0 0.5em 0;
+}
+
+.footer__license {
+  padding-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+  .footer__title {
+    font-size: 16px;
+    padding: 1em 1em 0.5em 1em;
+  }
+}

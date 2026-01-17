@@ -1,0 +1,135 @@
+.main__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main__title-form {
+  text-align: center;
+  font-size: 20px;
+  max-width: 400px;
+  font-weight: 700;
+  padding: 0 0 1em 0;
+}
+
+#pdf-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: solid 2px var(--color-primary);
+  margin: 4em 8em;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#input-pdf-file {
+  display: none;
+}
+
+.file-upload {
+  text-align: center;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.file-upload:hover {
+  background-color: var(--color-hover);
+}
+
+.main__button-form {
+  border-radius: 8px;
+  border: solid 1px var(--color-primary);
+  background-color: var(--color-primary);
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 1em 2em;
+}
+
+.main__result {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: solid 2px var(--color-primary);
+  border-radius: 8px;
+  margin: 2em 4em;
+  background-color: var(--color-secondary);
+  color: var(--color-text-secondary);
+  padding-bottom: 1em;
+}
+
+.main__result-title {
+  text-align: center;
+  padding: 1em 0;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.result__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  padding: 0.5em 1em;
+  border: solid 1px var(--color-primary);
+  margin: 0 2em;
+  border-radius: 8px;
+}
+
+.result__item strong {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.main__about-title,
+.main__contact-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  padding: 1em 0;
+}
+
+.main__about-text {
+  text-align: center;
+  font-size: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding-bottom: 1em;
+}
+
+.contact__box {
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .main__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact__box {
+    padding-bottom: 1em;
+  }
+
+  .main__about-text {
+    padding: 1em 1.5em;
+  }
+
+  .main__about-title,
+  .main__contact-title {
+    padding: 1em 1.5em;
+  }
+
+  #pdf-form {
+    margin: 2em 1.5em 0.5em 1.5em;
+    gap: 1em;
+  }
+
+  .main__result {
+    margin: 0.5em 1.5em 2em 1.5em;
+  }
+}

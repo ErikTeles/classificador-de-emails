@@ -1,0 +1,36 @@
+# ===== Virtual Environment =====
+venv/
+.env                 # caso use variáveis de ambiente
+
+# ===== Python Cache =====
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===== Logs =====
+*.log
+
+# ===== Sistema =====
+.DS_Store
+Thumbs.db
+
+# ===== IDEs / Editors =====
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+# ===== Build / Dist =====
+build/
+dist/
+*.egg-info/
+
+# ===== Arquivos temporários =====
+tmp/
+*.tmp
+*.bak
+*.swp
+
+# ===== Ignore PDFs e arquivos grandes do projeto se desejar =====
+*.pdf
